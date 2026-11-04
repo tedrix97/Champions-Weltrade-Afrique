@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Weltrade Affiliate Standings</title>
-<meta name="description" content="Live standings for the Weltrade Africa affiliate competition, 25 Nov to 31 Dec 2026.">
+<title>Classement Champions Weltrade Afrique</title>
+<meta name="description" content="Classement en direct de la compétition des affiliés Weltrade Afrique, du 25 nov. au 31 déc. 2026.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap">
 <style>
@@ -129,64 +129,64 @@ td.empty p{margin:0 auto;max-width:52ch}
 </head>
 <body>
 
-<header class="top"><div class="top-in"><div class="brand">weltrade<span>.</span></div><small>PARTNER NETWORK</small></div></header>
+<header class="top"><div class="top-in"><div class="brand">weltrade<span>.</span></div><small>RÉSEAU PARTENAIRES</small></div></header>
 
 <main>
   <section>
     <div class="hero">
       <div>
-        <div class="eyebrow">Africa · Affiliate performance competition</div>
-        <h1>Your clients.<em>Measured daily.</em></h1>
-        <p>Open to every Weltrade affiliate. One view of every affiliate and the clients behind them. Every eligible client counts toward the affiliate who referred them. Four KPIs combine into one score out of 100.</p>
+        <div class="eyebrow">Afrique · Compétition de performance des affiliés</div>
+        <h1>Vos clients.<em>Mesurés chaque jour.</em></h1>
+        <p>Ouverte à tous les affiliés Weltrade. Une vue unique de chaque affilié et de ses clients. Chaque client éligible compte pour l’affilié qui l’a parrainé. Quatre KPI se combinent en un score sur 100.</p>
       </div>
-      <div class="ring" aria-label="Top 3 affiliates selected"><b>3</b><span>Affiliates<br>selected</span></div>
+      <div class="ring" aria-label="Top 3 des affiliés sélectionnés"><b>3</b><span>Affiliés<br>sélectionnés</span></div>
     </div>
-    <div class="crumbs"><b>Affiliate</b> ← <b>Clients</b> <span>/ Client performance rolls up to the affiliate</span></div>
+    <div class="crumbs"><b>Affilié</b> ← <b>Clients</b> <span>/ La performance des clients remonte à l’affilié</span></div>
   </section>
 
   <div class="banner" id="banner"></div>
 
   <section class="count" aria-live="polite">
     <div>
-      <div class="eyebrow" id="cdEyebrow">Launch countdown</div>
-      <h2 id="cdTitle">Competition opens 25 November 2026</h2>
-      <p id="cdSub">Scoring window: 25 Nov 2026 00:00 to 31 Dec 2026 23:59, Kigali time (UTC+2).</p>
+      <div class="eyebrow" id="cdEyebrow">Compte à rebours du lancement</div>
+      <h2 id="cdTitle">La compétition commence le 25 novembre 2026</h2>
+      <p id="cdSub">Période de calcul : du 25 nov. 2026 à 00:00 au 31 déc. 2026 à 23:59, heure de Kigali (UTC+2).</p>
     </div>
     <div class="clock">
-      <div class="unit"><b id="cdD">00</b><span>Days</span></div>
-      <div class="unit"><b id="cdH">00</b><span>Hours</span></div>
+      <div class="unit"><b id="cdD">00</b><span>Jours</span></div>
+      <div class="unit"><b id="cdH">00</b><span>Heures</span></div>
       <div class="unit"><b id="cdM">00</b><span>Min</span></div>
       <div class="unit sec"><b id="cdS">00</b><span>Sec</span></div>
     </div>
-    <div class="progress" title="Competition progress"><i id="cdBar"></i></div>
+    <div class="progress" title="Avancement de la compétition"><i id="cdBar"></i></div>
   </section>
 
   <section class="rules" id="rules">
     <div class="card">
-      <h3>How your score is calculated</h3>
-      <p class="sub">Four KPIs, each weighted. Maximum score is 100.</p>
+      <h3>Comment votre score est calculé</h3>
+      <p class="sub">Quatre KPI, chacun pondéré. Le score maximum est de 100.</p>
       <div class="weights" id="weights"></div>
       <div class="wbar" id="wbar"></div>
       <div class="formula">
-        KPI points = (<em>your result</em> ÷ <em>best result among all affiliates</em>) × KPI weight<br>
-        Score = Net deposit pts + FTD pts + Active client pts + SpreadPay pts<br>
+        Points KPI = (<em>votre résultat</em> ÷ <em>meilleur résultat parmi tous les affiliés</em>) × poids du KPI<br>
+        Score = pts Dépôt net + pts FTD + pts Clients actifs + pts SpreadPay<br>
         <span id="example"></span>
       </div>
     </div>
     <div class="card">
-      <h3>Competition conditions</h3>
-      <p class="sub">Open to all Weltrade affiliates and applied the same way to everyone.</p>
+      <h3>Conditions de la compétition</h3>
+      <p class="sub">Ouvertes à tous les affiliés Weltrade et appliquées de la même manière à tous.</p>
       <ol class="cond">
-        <li><b>Who can take part.</b> The competition is open to every Weltrade affiliate.</li>
-        <li><b>Scoring window.</b> Only activity from 25 Nov 2026 00:00 to 31 Dec 2026 23:59 (UTC+2) counts.</li>
-        <li><b>Client attribution.</b> An affiliate's totals are the sum of the clients they referred. Each client counts once.</li>
-        <li><b>Net deposit</b> = deposits minus withdrawals of your clients in the window, in USD. A negative total scores 0 points.</li>
-        <li><b>FTD</b> = a client's first-ever deposit, made inside the window.</li>
-        <li><b>Active client</b> = a client who placed at least one trade in the window.</li>
-        <li><b>SpreadPay</b> = spread-based payout generated by your clients' trading in the window, in USD.</li>
-        <li><b>Relative scoring.</b> The leader in each KPI earns its full weight. Everyone else earns a share in proportion to the leader.</li>
-        <li><b>Selection.</b> At close, the <b>top 3 scores closest to 100</b> are selected. Ties go to more FTDs, then higher net deposit.</li>
-        <li><b>Daily updates.</b> Standings refresh once a day. Final results are confirmed after data validation.</li>
+        <li><b>Qui peut participer.</b> La compétition est ouverte à tous les affiliés Weltrade.</li>
+        <li><b>Période de calcul.</b> Seule l’activité du 25 nov. 2026 à 00:00 au 31 déc. 2026 à 23:59 (UTC+2) est prise en compte.</li>
+        <li><b>Attribution des clients.</b> Les totaux d’un affilié correspondent à la somme des clients qu’il a parrainés. Chaque client n’est compté qu’une fois.</li>
+        <li><b>Dépôt net</b> = dépôts moins retraits de vos clients pendant la période, en USD. Un total négatif rapporte 0 point.</li>
+        <li><b>FTD</b> (premier dépôt) = le tout premier dépôt d’un client, effectué pendant la période.</li>
+        <li><b>Client actif</b> = un client ayant passé au moins une transaction pendant la période.</li>
+        <li><b>SpreadPay</b> = rémunération basée sur le spread, générée par le trading de vos clients pendant la période, en USD.</li>
+        <li><b>Score relatif.</b> Le meilleur de chaque KPI obtient la totalité des points. Les autres obtiennent une part proportionnelle à celle du meilleur.</li>
+        <li><b>Sélection.</b> À la clôture, les <b>3 meilleurs scores, les plus proches de 100</b>, sont retenus. En cas d’égalité, le plus grand nombre de FTD l’emporte, puis le dépôt net le plus élevé.</li>
+        <li><b>Mises à jour quotidiennes.</b> Le classement est actualisé une fois par jour. Les résultats finaux sont confirmés après validation des données.</li>
       </ol>
     </div>
   </section>
@@ -195,30 +195,30 @@ td.empty p{margin:0 auto;max-width:52ch}
 
   <section id="p-board" role="tabpanel">
     <div class="bar">
-      <h2>Network standings</h2>
+      <h2>Classement des affiliés</h2>
       <div class="tools">
-        <input id="q" type="search" placeholder="Search affiliate ID" aria-label="Search affiliate">
-        <select id="sort" aria-label="Sort">
-          <option value="score">Sort: tournament score</option>
-          <option value="net">Sort: net deposit</option>
-          <option value="ftd">Sort: FTDs</option>
-          <option value="active">Sort: active clients</option>
-          <option value="spread">Sort: SpreadPay</option>
+        <input id="q" type="search" placeholder="Rechercher un ID affilié" aria-label="Rechercher un affilié">
+        <select id="sort" aria-label="Trier">
+          <option value="score">Trier : score du tournoi</option>
+          <option value="net">Trier : dépôt net</option>
+          <option value="ftd">Trier : FTD</option>
+          <option value="active">Trier : clients actifs</option>
+          <option value="spread">Trier : SpreadPay</option>
         </select>
       </div>
     </div>
     <div class="tablewrap"><table>
       <thead><tr>
-        <th>Rank</th><th>Affiliate</th>
-        <th><span class="k" style="background:var(--k-net)"></span>Net deposit · USD</th>
-        <th><span class="k" style="background:var(--k-ftd)"></span>FTDs</th>
-        <th><span class="k" style="background:var(--k-act)"></span>Active clients</th>
+        <th>Rang</th><th>Affilié</th>
+        <th><span class="k" style="background:var(--k-net)"></span>Dépôt net · USD</th>
+        <th><span class="k" style="background:var(--k-ftd)"></span>FTD</th>
+        <th><span class="k" style="background:var(--k-act)"></span>Clients actifs</th>
         <th><span class="k" style="background:var(--k-spr)"></span>SpreadPay · USD</th>
         <th>Score / 100</th>
       </tr></thead>
       <tbody id="rows"></tbody>
     </table></div>
-    <p class="foot">Rank is always based on score; sorting by another column keeps the rank number. Small grey figures are the points each KPI contributes to the score.</p>
+    <p class="foot">Le rang est toujours basé sur le score ; trier par une autre colonne conserve le numéro de rang. Les petits chiffres gris indiquent les points apportés par chaque KPI au score.</p>
   </section>
 
 
@@ -230,16 +230,17 @@ td.empty p{margin:0 auto;max-width:52ch}
 /* Figures live in data.js */
 /* Weights must add up to 100 */
 const KPIS = [
-  {key:"net",    label:"Net deposit",    w:35, color:"var(--k-net)", note:"Deposits minus withdrawals, USD"},
-  {key:"ftd",    label:"FTDs",           w:35, color:"var(--k-ftd)", note:"First-time deposits in the window"},
-  {key:"active", label:"Active clients", w:15, color:"var(--k-act)", note:"Clients who traded in the window"},
-  {key:"spread", label:"SpreadPay",      w:15, color:"var(--k-spr)", note:"Spread-based payout, USD"}
+  {key:"net",    label:"Dépôt net",      w:35, color:"var(--k-net)", note:"Dépôts moins retraits, USD"},
+  {key:"ftd",    label:"FTD",            w:35, color:"var(--k-ftd)", note:"Premiers dépôts pendant la période"},
+  {key:"active", label:"Clients actifs", w:15, color:"var(--k-act)", note:"Clients ayant tradé pendant la période"},
+  {key:"spread", label:"SpreadPay",      w:15, color:"var(--k-spr)", note:"Rémunération basée sur le spread, USD"}
 ];
 /* ============================ */
 
 const $ = s => document.querySelector(s);
-const fmt = n => Math.round(n).toLocaleString("en-US");
-const usd = n => (n<0?"−$":"$") + fmt(Math.abs(n));
+const fmt = n => Math.round(n).toLocaleString("fr-FR");
+const usd = n => (n<0?"−":"") + fmt(Math.abs(n)) + " $";
+const dec = (n,d) => n.toLocaleString("fr-FR",{minimumFractionDigits:d,maximumFractionDigits:d});
 
 const rollup = data => data.map(a => ({...a}));
 function score(list){
@@ -262,7 +263,7 @@ let state = score(rollup(DATA));
 function kpiCell(m,k){
   const v = m[k.key];
   const shown = (k.key==="net"||k.key==="spread") ? usd(v) : fmt(v);
-  return `<td><span class="v ${v<0?"neg":""}">${shown}</span><span class="pts">${m.pts[k.key].toFixed(1)} pts</span></td>`;
+  return `<td><span class="v ${v<0?"neg":""}">${shown}</span><span class="pts">${dec(m.pts[k.key],1)} pts</span></td>`;
 }
 function render(){
   const q = $("#q").value.trim().toLowerCase();
@@ -278,26 +279,26 @@ function render(){
       <td class="rank">${String(m.rank).padStart(2,"0")}</td>
       <td class="ma"><b>${m.id}${top?'<span class="chip">Top 3</span>':""}</b></td>
       ${KPIS.map(k => kpiCell(m,k)).join("")}
-      <td class="score"><b>${m.score.toFixed(2)}<small> /100</small></b>
+      <td class="score"><b>${dec(m.score,2)}<small> /100</small></b>
         <div class="sbar">${bar}</div>
-        <span class="gap">${m.rank===1?"Leading":(leader.score-m.score).toFixed(2)+" behind #1"}</span></td>
+        <span class="gap">${m.rank===1?"En tête":dec(leader.score-m.score,2)+" pts derrière le n°1"}</span></td>
     </tr>`;
-    if (key==="score" && !q && m.rank===3 && list.length>3) html += `<tr class="cut"><td colspan="7"><div class="cutline">Selection line · top 3</div></td></tr>`;
+    if (key==="score" && !q && m.rank===3 && list.length>3) html += `<tr class="cut"><td colspan="7"><div class="cutline">Ligne de sélection · top 3</div></td></tr>`;
   });
-  if (!state.list.length) html = `<tr><td colspan="7" class="empty"><h3>Standings open soon</h3><p>The competition starts on 25 November 2026. The first standings will be published on 26 November, and every day after that.</p></td></tr>`;
-  $("#rows").innerHTML = html || `<tr><td colspan="7" class="empty">No affiliate matches “${q}”.</td></tr>`;
+  if (!state.list.length) html = `<tr><td colspan="7" class="empty"><h3>Le classement arrive bientôt</h3><p>La compétition commence le 25 novembre 2026. Le premier classement sera publié le 26 novembre, puis chaque jour.</p></td></tr>`;
+  $("#rows").innerHTML = html || `<tr><td colspan="7" class="empty">Aucun affilié ne correspond à « ${q} ».</td></tr>`;
 }
 function rulesUI(){
   $("#weights").innerHTML = KPIS.map(k => `<div class="w"><span class="dot" style="background:${k.color}"></span><div><strong>${k.label}</strong><small>${k.note}</small></div><span class="pct">${k.w}%</span></div>`).join("");
   $("#wbar").innerHTML = KPIS.map(k => `<i style="width:${k.w}%;background:${k.color}"></i>`).join("");
   const m = state.list[1], b = state.best;
   $("#example").innerHTML = m
-    ? `<br>Example, ${m.id}: FTDs ${m.ftd} ÷ best ${b.ftd} × 35 = <em>${m.pts.ftd.toFixed(2)} pts</em>. All four KPIs together = <em>${m.score.toFixed(2)} / 100</em>.`
-    : `<br>Example: 30 FTDs when the leader has 40 FTDs → 30 ÷ 40 × 35 = <em>26.25 pts</em> for the FTD KPI.`;
+    ? `<br>Exemple, ${m.id} : FTD ${m.ftd} ÷ meilleur ${b.ftd} × 35 = <em>${dec(m.pts.ftd,2)} pts</em>. Les quatre KPI ensemble = <em>${dec(m.score,2)} / 100</em>.`
+    : `<br>Exemple : 30 FTD quand le meilleur en a 40 → 30 ÷ 40 × 35 = <em>26,25 pts</em> pour le KPI FTD.`;
 }
 function banner(){
-  const parts = [CONFIG.demo ? "DEMONSTRATION · Synthetic data" : "Official standings", "2026-11-25 → 2026-12-31", "Weights 35 / 35 / 15 / 15",
-    CONFIG.updated ? "Last updated " + CONFIG.updated : "First standings published 26 Nov 2026"];
+  const parts = [CONFIG.demo ? "DÉMONSTRATION · Données fictives" : "Classement officiel", "25/11/2026 → 31/12/2026", "Pondérations 35 / 35 / 15 / 15",
+    CONFIG.updated ? "Dernière mise à jour : " + CONFIG.updated.split("-").reverse().join("/") : "Premier classement publié le 26/11/2026"];
   $("#banner").textContent = parts.join(" · ");
 }
 
@@ -307,15 +308,15 @@ function tick(){
   const now = Date.now(), pad = n => String(n).padStart(2,"0");
   let target, live = now >= T0 && now <= T1, done = now > T1;
   if (now < T0){ target = T0;
-    $("#cdEyebrow").textContent = "Launch countdown";
-    $("#cdTitle").textContent = "Competition opens 25 November 2026";
+    $("#cdEyebrow").textContent = "Compte à rebours du lancement";
+    $("#cdTitle").textContent = "La compétition commence le 25 novembre 2026";
   } else if (live){ target = T1;
     const day = Math.floor((now-T0)/864e5)+1, total = Math.ceil((T1-T0)/864e5);
-    $("#cdEyebrow").textContent = `Live · Day ${day} of ${total}`;
-    $("#cdTitle").textContent = "Time left to climb the board";
+    $("#cdEyebrow").textContent = `En cours · Jour ${day} sur ${total}`;
+    $("#cdTitle").textContent = "Temps restant pour grimper au classement";
   } else { target = now;
-    $("#cdEyebrow").textContent = "Closed";
-    $("#cdTitle").textContent = "Competition closed · results under validation";
+    $("#cdEyebrow").textContent = "Terminée";
+    $("#cdTitle").textContent = "Compétition terminée · résultats en cours de validation";
   }
   const d = Math.max(0, target-now);
   $("#cdD").textContent = pad(Math.floor(d/864e5));
