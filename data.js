@@ -13,7 +13,7 @@ var CONFIG = {
 };
 
 /* One entry per competing affiliate: {id, net, ftd, active, spread}. Totals for the window so far.
-   Empty until the first upload on 26 November 2026. */
+   Empty until the first upload on 28 November 2026. */
 var DATA = [];
 
 /* Daily top 3, added automatically by admin.html */
