@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Classement Champions Weltrade Afrique</title>
-<meta name="description" content="Classement en direct de la compétition des affiliés Weltrade Afrique, du 25 nov. au 31 déc. 2026.">
+<meta name="description" content="Classement en direct de la compétition des affiliés Weltrade Afrique, du 27 nov. au 31 déc. 2026.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap">
 <style>
@@ -149,8 +149,8 @@ td.empty p{margin:0 auto;max-width:52ch}
   <section class="count" aria-live="polite">
     <div>
       <div class="eyebrow" id="cdEyebrow">Compte à rebours du lancement</div>
-      <h2 id="cdTitle">La compétition commence le 25 novembre 2026</h2>
-      <p id="cdSub">Période de calcul : du 25 nov. 2026 à 00:00 au 31 déc. 2026 à 23:59, heure de Kigali (UTC+2).</p>
+      <h2 id="cdTitle">La compétition commence le 27 novembre 2026</h2>
+      <p id="cdSub">Période de calcul : du 27 nov. 2026 à 00:00 au 31 déc. 2026 à 23:59, heure de Kigali (UTC+2).</p>
     </div>
     <div class="clock">
       <div class="unit"><b id="cdD">00</b><span>Jours</span></div>
@@ -178,7 +178,7 @@ td.empty p{margin:0 auto;max-width:52ch}
       <p class="sub">Ouvertes à tous les affiliés Weltrade et appliquées de la même manière à tous.</p>
       <ol class="cond">
         <li><b>Qui peut participer.</b> La compétition est ouverte à tous les affiliés Weltrade.</li>
-        <li><b>Période de calcul.</b> Seule l’activité du 25 nov. 2026 à 00:00 au 31 déc. 2026 à 23:59 (UTC+2) est prise en compte.</li>
+        <li><b>Période de calcul.</b> Seule l’activité du 27 nov. 2026 à 00:00 au 31 déc. 2026 à 23:59 (UTC+2) est prise en compte.</li>
         <li><b>Attribution des clients.</b> Les totaux d’un affilié correspondent à la somme des clients qu’il a parrainés. Chaque client n’est compté qu’une fois.</li>
         <li><b>Dépôt net</b> = dépôts moins retraits de vos clients pendant la période, en USD. Un total négatif rapporte 0 point.</li>
         <li><b>FTD</b> (premier dépôt) = le tout premier dépôt d’un client, effectué pendant la période.</li>
@@ -285,7 +285,7 @@ function render(){
     </tr>`;
     if (key==="score" && !q && m.rank===3 && list.length>3) html += `<tr class="cut"><td colspan="7"><div class="cutline">Ligne de sélection · top 3</div></td></tr>`;
   });
-  if (!state.list.length) html = `<tr><td colspan="7" class="empty"><h3>Le classement arrive bientôt</h3><p>La compétition commence le 25 novembre 2026. Le premier classement sera publié le 26 novembre, puis chaque jour.</p></td></tr>`;
+  if (!state.list.length) html = `<tr><td colspan="7" class="empty"><h3>Le classement arrive bientôt</h3><p>La compétition commence le 27 novembre 2026. Le premier classement sera publié le 28 novembre, puis chaque jour.</p></td></tr>`;
   $("#rows").innerHTML = html || `<tr><td colspan="7" class="empty">Aucun affilié ne correspond à « ${q} ».</td></tr>`;
 }
 function rulesUI(){
@@ -297,8 +297,8 @@ function rulesUI(){
     : `<br>Exemple : 30 FTD quand le meilleur en a 40 → 30 ÷ 40 × 35 = <em>26,25 pts</em> pour le KPI FTD.`;
 }
 function banner(){
-  const parts = [CONFIG.demo ? "DÉMONSTRATION · Données fictives" : "Classement officiel", "25/11/2026 → 31/12/2026", "Pondérations 35 / 35 / 15 / 15",
-    CONFIG.updated ? "Dernière mise à jour : " + CONFIG.updated.split("-").reverse().join("/") : "Premier classement publié le 26/11/2026"];
+  const parts = [CONFIG.demo ? "DÉMONSTRATION · Données fictives" : "Classement officiel", "27/11/2026 → 31/12/2026", "Pondérations 35 / 35 / 15 / 15",
+    CONFIG.updated ? "Dernière mise à jour : " + CONFIG.updated.split("-").reverse().join("/") : "Premier classement publié le 28/11/2026"];
   $("#banner").textContent = parts.join(" · ");
 }
 
@@ -309,7 +309,7 @@ function tick(){
   let target, live = now >= T0 && now <= T1, done = now > T1;
   if (now < T0){ target = T0;
     $("#cdEyebrow").textContent = "Compte à rebours du lancement";
-    $("#cdTitle").textContent = "La compétition commence le 25 novembre 2026";
+    $("#cdTitle").textContent = "La compétition commence le 27 novembre 2026";
   } else if (live){ target = T1;
     const day = Math.floor((now-T0)/864e5)+1, total = Math.ceil((T1-T0)/864e5);
     $("#cdEyebrow").textContent = `En cours · Jour ${day} sur ${total}`;

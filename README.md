@@ -26,7 +26,7 @@ At close, the top 3 scores are selected. Ties go to more FTDs, then higher net d
 
 Open to every Weltrade affiliate.
 
-Scoring window: 25 Nov 2026 00:00 to 31 Dec 2026 23:59, Kigali time (UTC+2). The countdown on the page switches to "Day X of 37" automatically at launch.
+Scoring window: 27 Nov 2026 00:00 to 31 Dec 2026 23:59, Kigali time (UTC+2). The countdown on the page switches to "Day X of 35" automatically at launch.
 
 ## First publication
 
@@ -41,7 +41,7 @@ Scoring window: 25 Nov 2026 00:00 to 31 Dec 2026 23:59, Kigali time (UTC+2). The
 ## Launch state
 
 - `data.js` ships **empty**. Until the first upload, the page shows the countdown, the scoring rules, and a "Standings open soon" message in the table.
-- The competition opens on **25 November 2026**. The **first upload is on 26 November**, with the figures from 25 November.
+- The competition opens on **27 November 2026**. The **first upload is on 28 November**, with the figures from 27 November.
 - No other setting needs changing at launch.
 
 ## Daily update (about 5 minutes)

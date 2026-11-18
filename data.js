@@ -6,9 +6,9 @@
    ========================================================== */
 
 var CONFIG = {
-  launch: "2026-11-25T00:00:00+02:00",
+  launch: "2026-11-27T00:00:00+02:00",
   close:  "2026-12-31T23:59:59+02:00",
-  updated: null,          // set automatically by admin.html, e.g. "2026-11-26"
+  updated: null,          // set automatically by admin.html, e.g. "2026-11-28"
   demo: false
 };
 
